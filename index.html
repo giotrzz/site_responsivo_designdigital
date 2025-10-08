@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luna & Vênus</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#">Mundinho Luna e Vênus</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="#">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sobre">Sobre Elas</a></li>
+          <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
+          <li class="nav-item"><a class="nav-link" href="#dicas">Dicas</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div id="carouselGatinhas" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src= "images/lunadormindo.jpeg"class="d-block w-100" alt="Luna e Vênus">
+      </div>
+      <div class="carousel-item">
+        <img src="images/venus dormindo.jpeg" class="d-block w-100" alt="Luna brincando">
+      </div>
+      <div class="carousel-item">
+        <img src="images/lunaevenus.jpeg" class="d-block w-100" alt="Vênus dormindo">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselGatinhas" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselGatinhas" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <section class="hero">
+    <h1>Minhas gatinhas</h1>
+    <p class="mt-3">Um universo de amor, ronrons e patinhas fofas.</p>
+    <button class="btn btn-custom mt-3" data-bs-toggle="modal" data-bs-target="#modalSobre">
+      Explore o Mundo Delas!
+    </button>
+  </section>
+
+  <div class="modal fade" id="modalSobre" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Sobre Luna & Vênus</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>Luna e Vênus fazem uma bela dupla, as duas fazem compahia uma para a outra e mantem uma conexão invejavel, no começo não se davam bem mas a convivência foi se tornando boa e hoje elas são muito unidas!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="sobre" class="container py-5">
+    <h2 class="text-center mb-4">Sobre Elas</h2>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="card shadow-sm">
+          <img src="images/lunarosto.jpeg" class="card-img-top" alt="Luna">
+          <div class="card-body">
+            <h5 class="card-title">Luna, a Anciã</h5>
+            <p class="card-text">Luna foi adotada já adulta e hoje tem por volta de 7 anos, é muito carinhosa e comilona, adora tomar banho de sol e fazer suas caminhadas matinais.</p>
+            <a href="#galeria" class="btn btn-custom">Ver Fotos</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card shadow-sm">
+          <img src="images/rostovenusperto.jpeg" class="card-img-top" alt="Vênus">
+          <div class="card-body">
+            <h5 class="card-title">Vênus, a Tigreza</h5>
+            <p class="card-text">Tranquila e carinhosa, é bem desconfiada perto de desconhecidos mas ama ficar perto de suas donas e receber carinho no queixinho.</p>
+            <a href="#galeria" class="btn btn-custom">Ver Fotos</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="galeria" class="container py-5">
+  <h2 class="text-center mb-4">Galeria de Fotos</h2>
+
+  <div class="row g-3">
+    <div class="col-6 col-md-3">
+      <div class="bg-light p-2 rounded border-pink">
+        <img src="images/lunrostolado.jpeg" class="img-fluid rounded" alt="Luna de lado">
+      </div>
+    </div>
+
+    <div class="col-6 col-md-3">
+      <div class="bg-light p-2 rounded border-pink">
+        <img src="images/fotovenusrostoengra.jpeg" class="img-fluid rounded" alt="Vênus foto engraçada">
+      </div>
+    </div>
+
+    <div class="col-6 col-md-3">
+      <div class="bg-light p-2 rounded border-pink">
+        <img src="images/venuscolo.jpeg" class="img-fluid rounded" alt="venus no colo">
+      </div>
+    </div>
+
+    <div class="col-6 col-md-3">
+      <div class="bg-light p-2 rounded border-pink">
+        <img src="images/lunadormindo.jpeg" class="img-fluid rounded" alt="luna dormindo">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="dicas" class="container py-5">
+    <h2 class="text-center mb-4">Dicas & Truques</h2>
+    <div class="accordion" id="accordionDicas">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#dica1">
+            Brincadeiras preferidas
+          </button>
+        </h2>
+        <div id="dica1" class="accordion-collapse collapse show">
+          <div class="accordion-body">
+            Luna adora bichinhhos de pelucia com catnip e fitas, Vênus prefere varinhas com penas, fitas e gosta de se aventurar ao ar livre!
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#dica2">
+            Cuidados com o pelo
+          </button>
+        </h2>
+        <div id="dica2" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            Escovar o pelo regularmente evita nós e mantém o brilho natural
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#dica3">
+            Truque de Enriquecimento
+          </button>
+        </h2>
+        <div id="dica3" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            Gatos amam altura! Instale prateleiras ou nichos na parede para criar um **"gatificação"** do ambiente. Isso permite que eles observem tudo de cima, exercitem-se e sintam-se mais seguros, sendo ótimo para a saúde mental.
+          </div>
+        </div>
+      </div>
+      </div>
+</section>
+
+
+  <footer id="direitos">
+    <p>© 2024 Mundinho Luna Vênus. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
